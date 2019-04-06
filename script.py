@@ -76,7 +76,7 @@ def plot(data,preds,colors=["blue","black","red","cyan","magenta","green"]):
             Line2D([0],[0],color=colors[i]) for i in range(6)
         ]
     
-        ax.legend(custom_lines,classes,loc=(1.2,0.5))
+        ax.legend(custom_lines,classes,loc=(1.01,0.1))
         ax.set_title(col)
     plt.show()
 
