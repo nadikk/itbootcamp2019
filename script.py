@@ -28,7 +28,7 @@ def load_data(path,timesteps=timesteps):
 def load_models(kfold=5):
     models = []
     for i in range(kfold):
-        models.append(load_model('models/LSTM_{}_7'.format(i)))
+        models.append(load_model('itbootcamp2019/models/LSTM_{}_7'.format(i)))
     return models
 
 def predictions(data,models,timesteps=timesteps):
