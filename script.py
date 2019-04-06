@@ -78,6 +78,7 @@ def plot(data,preds,colors=["blue","black","red","cyan","magenta","green"]):
     
         ax.legend(custom_lines,classes,loc=(1.01,0.0))
         ax.set_title(col)
+    plt.tight_layout()
     plt.show()
 
 #data = load_data("../tests/wlksit/DeviceMotion.csv")
