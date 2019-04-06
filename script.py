@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.style
+import matplotlib as mpl
+mpl.style.use("classic")
 from keras.models import load_model
 from matplotlib.lines import Line2D
 from collections import defaultdict
