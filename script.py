@@ -8,7 +8,7 @@ from keras.models import load_model
 from matplotlib.lines import Line2D
 from collections import defaultdict
 
-timesteps=200
+timesteps=50
 classes = ['trapper ned', 'løbe', 'sidde', 'stå', 'trapper op', 'gå']
 
 def load_data(path,timesteps=timesteps):
