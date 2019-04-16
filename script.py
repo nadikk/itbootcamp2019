@@ -28,10 +28,10 @@ def load_data(path,timesteps=timesteps):
     concat = pd.concat(chunks,ignore_index=True)
     return concat
 
-def load_models(kfold=5):
+def load_models(kfold=5,model_num=7):
     models = []
     for i in range(kfold):
-        models.append(load_model('itbootcamp2019/models/LSTM_{}_12'.format(i)))
+        models.append(load_model('itbootcamp2019/models/LSTM_{}_12'.format(i,model_num)))
     return models
 
 def predictions(data,models,timesteps=timesteps):
