@@ -8,7 +8,7 @@ from keras.models import load_model
 from matplotlib.lines import Line2D
 from collections import defaultdict
 
-timesteps=50
+timesteps=200
 classes = ['trapper ned', 'løbe', 'sidde', 'stå', 'trapper op', 'gå']
 
 def load_data(path,timesteps=timesteps):
@@ -31,7 +31,7 @@ def load_data(path,timesteps=timesteps):
 def load_models(kfold=5,model_num=7):
     models = []
     for i in range(kfold):
-        models.append(load_model('itbootcamp2019/models/LSTM_{}_12'.format(i,model_num)))
+        models.append(load_model('itbootcamp2019/models/LSTM_{}_{}'.format(i,model_num)))
     return models
 
 def predictions(data,models,timesteps=timesteps):
