@@ -75,7 +75,7 @@ def predictions(data, models, timesteps=timesteps):
     #return [label_dict[y] for y in preds]
     return preds
 
-def plot(data, preds, timesteps=timesteps, classes=classes, colors=["blue","black","red","cyan","magenta","green"]):
+def plot(data, preds, timesteps=timesteps, colors=["blue","black","red","cyan","magenta","green"], classes=classes):
     # divide into segments
     data_with_labels = data.copy()
     data_with_labels["labels"] = list(np.repeat(preds, timesteps))
