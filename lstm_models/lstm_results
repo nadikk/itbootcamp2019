@@ -1,0 +1,75 @@
+lstm_1
+timesteps = 200
+window_size = int(timesteps/8)
+all features
+train_loss: 0.41
+train_acc: 0.86
+val_loss: 0.67
+val_acc: 0.73
+loss_diff = 0.26
+test_loss: 0.77
+test_acc: 0.70
+
+lstm_2
+timesteps = 200
+window_size = int(timesteps/8)
+-total velocity
+train_loss: 0.78
+train_acc: 0.73
+val_loss: 0.90
+val_acc: 0.64
+loss_diff = 0.13
+test_loss: 0.84
+test_acc: 0.71
+
+lstm_3
+timesteps = 200
+window_size = int(timesteps/9)
+-total velocity
+train_loss: 0.47
+train_acc: 0.87
+val_loss: 0.73
+val_acc: 0.73
+loss_diff = 0.26
+test_loss: 0.64
+test_acc: 0.82
+
+lstm_4
+timesteps = 200
+window_size = int(timesteps/9)
+-total velocity
+train_loss: 0.54
+train_acc: 0.82
+val_loss: 0.74
+val_acc: 0.69
+loss_diff = 0.20
+test_loss: 0.70
+test_acc: 0.77
+
+lstm_5
+timesteps = 200
+window_size = int(timesteps/9)
+-total velocity
+- standard scala
+train_loss: 0.49
+train_acc: 0.80
+val_loss: 0.56
+val_acc: 0.77
+loss_diff = 0.07
+test_loss: 0.64
+test_acc: 0.73
+
+lstm_6
+timesteps = 200
+window_size = int(timesteps/9)
+-total velocity
+- standard scala
+train_loss: 0.38
+train_acc: 0.86
+val_loss: 0.57
+val_acc: 0.79
+loss_diff = 0.19
+test_loss: 0.71
+test_acc: 0.71
+
+
