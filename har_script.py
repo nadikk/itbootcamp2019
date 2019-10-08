@@ -33,7 +33,7 @@ def load_data(path, timesteps=timesteps, window_size=window_size):
         data.extend(chunks)
     else:
         print("Ikke nok data")
-    return pd.concat(data, ignore_index=True), timestamps
+    return pd.concat(data, ignore_index=True)
 
 def create_features(df, features=features):
     df["totalAcceleration.x"] = df["userAcceleration.x"] + df["gravity.x"]
