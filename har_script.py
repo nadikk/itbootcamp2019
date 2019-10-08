@@ -59,7 +59,7 @@ def create_features(df, features=features):
 def load_models(model_num="6"):
     models = []
     for i in range(5):
-        models.append(load_model('lstm_models/lstm_{}_{}'.format(model_num, i)))
+        models.append(load_model('itbootcamp2019/lstm_models/lstm_{}_{}'.format(model_num, i)))
     return models
 
 def predictions(data, models, timesteps=timesteps):
